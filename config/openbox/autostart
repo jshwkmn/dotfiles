@@ -1,0 +1,3 @@
+picom &
+nitrogen --restore &
+rofi -show run &
