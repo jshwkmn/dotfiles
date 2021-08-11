@@ -1,6 +1,24 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+
+#                                    
+#           ,---._                   
+#         .-- -.' \            .---. 
+#         |    |   :          /. ./| 
+#         :    ;   |      .--'.  ' ; 
+#         :        |     /__./ \ : | 
+#         |    :   : .--'.  '   \' . 
+#         :         /___/ \ |    ' ' 
+#         |    ;   |;   \  \;      : 
+#     ___ l          \   ;  `      | 
+#   /    /\    J   :  .   \    .\  ; 
+#  /  ../  `..-    ,   \   \   ' \ | 
+#  \    \         ;     :   '  |--"  
+#   \    \      ,'       \   \ ;     
+#    "---....--'          '---"      
+#                                    
+
+
+
+
 
 
 { config, pkgs, ... }:
@@ -101,17 +119,6 @@ nerdfonts
 ];
 
 
-
-
-
-
-
-
-
-
-
-
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -140,4 +147,13 @@ nerdfonts
   system.stateVersion = "21.05"; # Did you read the comment?
 
 }
+
+
+                                                                                                                                                 
+                                                                                                                                              #      _  _     
+                                                                                                                                              #     / |/ \  /|
+                                                                                                                                              #     | || |  ||
+                                                                                                                                              #  /\_| || |/\||
+                                                                                                                                              #  \____/\_/  \|
+                                                                                                                                              #               
 
