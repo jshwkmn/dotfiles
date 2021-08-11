@@ -1,4 +1,4 @@
-
+#
 #                                    
 #           ,---._                   
 #         .-- -.' \            .---. 
@@ -15,7 +15,7 @@
 #   \    \      ,'       \   \ ;     
 #    "---....--'          '---"      
 #                                    
-
+#NIXOS CONFIG FILE (08-19-21)
 
 
 
@@ -38,8 +38,8 @@
   # Define on which hard drive you want to install Grub.
    boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
 
-  # networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+   networking.hostName = "joshwik-nix"; # Define your hostname.
+   networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Set your time zone.
    time.timeZone = "Canada/Regina";
@@ -68,7 +68,7 @@
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
-  
+  services.xserver.windowManager.qtile.enable = true;
 
   # Configure keymap in X11
    services.xserver.layout = "us";
@@ -102,7 +102,7 @@ nixpkgs.config.allowUnfree = true;
     #WEB
     brave discord 
     #UTILS
-    dmenu rofi disfetch 
+    dmenu rofi disfetch  
     #EDITING
     gimp openshot-qt krita
     
