@@ -1,0 +1,11 @@
+[settings]
+last-window-width=666
+last-window-height=718
+homepage=File:///usr/share/midori/CustomHomePage.html
+toolbar-items=TabNew,Back,ReloadStop,Homepage,Location,BookmarkAdd,CompactMenu
+load-on-startup=MIDORI_STARTUP_HOMEPAGE
+
+[extensions]
+libcolorful-tabs.so=true
+libstatus-clock.so=true
+libadblock.so=true

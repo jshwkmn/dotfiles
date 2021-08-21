@@ -1,378 +1,243 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<openbox_menu>
-    <menu id="root-menu" label="OpenBox 3">
-        <menu id="1" label="Development">
-            <item label="GDB"> <action name="Execute">
-                <execute>alacritty -e gdb</execute>
-            </action> </item>
-            <item label="Tclsh8.6"> <action name="Execute">
-                <execute>alacritty -e tclsh8.6</execute>
-            </action> </item>
-        </menu>
-        <menu id="2" label="Editors">
-            <item label="Nano"> <action name="Execute">
-                <execute>alacritty -e nano</execute>
-            </action> </item>
-            <item label="Pico"> <action name="Execute">
-                <execute>alacritty -e pico</execute>
-            </action> </item>
-            <item label="Text Editor"> <action name="Execute">
-                <execute>gedit</execute>
-            </action> </item>
-            <item label="Vi"> <action name="Execute">
-                <execute>alacritty -e vi</execute>
-            </action> </item>
-            <item label="Xedit"> <action name="Execute">
-                <execute>xedit</execute>
-            </action> </item>
-            <item label="Xournal"> <action name="Execute">
-                <execute>xournal</execute>
-            </action> </item>
-        </menu>
-        <menu id="18" label="Games">
-            <menu id="17" label="Amusement">
-                <item label="Oclock"> <action name="Execute">
-                    <execute>oclock</execute>
-                </action> </item>
-                <item label="Xclock (analog)"> <action name="Execute">
-                    <execute>xclock -analog</execute>
-                </action> </item>
-                <item label="Xclock (digital)"> <action name="Execute">
-                    <execute>xclock -digital -update 1</execute>
-                </action> </item>
-                <item label="Xeyes"> <action name="Execute">
-                    <execute>xeyes</execute>
-                </action> </item>
-                <item label="Xlogo"> <action name="Execute">
-                    <execute>xlogo</execute>
-                </action> </item>
-            </menu>
-            <menu id="11" label="Board">
-                <item label="Mahjongg"> <action name="Execute">
-                    <execute>gnome-mahjongg</execute>
-                </action> </item>
-            </menu>
-            <menu id="12" label="Card">
-                <item label="AisleRiot Solitaire"> <action name="Execute">
-                    <execute>sol</execute>
-                </action> </item>
-            </menu>
-            <menu id="13" label="Puzzle">
-                <item label="Mines"> <action name="Execute">
-                    <execute>gnome-mines</execute>
-                </action> </item>
-                <item label="Sudoku"> <action name="Execute">
-                    <execute>gnome-sudoku</execute>
-                </action> </item>
-            </menu>
-            <item label="2048"> <action name="Execute">
-                <execute>gnome-2048</execute>
-            </action> </item>
-            <item label="Snes9x"> <action name="Execute">
-                <execute>snes9x-gtk</execute>
-            </action> </item>
-        </menu>
-        <menu id="6" label="Graphics">
-            <item label="Document Scanner"> <action name="Execute">
-                <execute>simple-scan</execute>
-            </action> </item>
-            <item label="Drawing"> <action name="Execute">
-                <execute>drawing</execute>
-            </action> </item>
-            <item label="gThumb"> <action name="Execute">
-                <execute>gthumb</execute>
-            </action> </item>
-            <item label="Xditview"> <action name="Execute">
-                <execute>xditview</execute>
-            </action> </item>
-        </menu>
-        <menu id="7" label="Multimedia">
-            <item label="ALSA mixer"> <action name="Execute">
-                <execute>alacritty -e alsamixer</execute>
-            </action> </item>
-            <item label="Celluloid"> <action name="Execute">
-                <execute>celluloid</execute>
-            </action> </item>
-            <item label="Cheese"> <action name="Execute">
-                <execute>cheese</execute>
-            </action> </item>
-            <item label="mpv Media Player"> <action name="Execute">
-                <execute>mpv --player-operation-mode=pseudo-gui</execute>
-            </action> </item>
-            <item label="Rhythmbox"> <action name="Execute">
-                <execute>rhythmbox</execute>
-            </action> </item>
-        </menu>
-        <menu id="5" label="Network">
-            <item label="Brave Web Browser"> <action name="Execute">
-                <execute>env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/brave_brave.desktop /snap/bin/brave</execute>
-            </action> </item>
-            <item label="Discord"> <action name="Execute">
-                <execute>/usr/share/discord/Discord</execute>
-            </action> </item>
-            <item label="FTP"> <action name="Execute">
-                <execute>alacritty -e ftp</execute>
-            </action> </item>
-            <item label="Telnet"> <action name="Execute">
-                <execute>alacritty -e telnet</execute>
-            </action> </item>
-            <item label="Thunderbird"> <action name="Execute">
-                <execute>thunderbird</execute>
-            </action> </item>
-            <item label="Transmission"> <action name="Execute">
-                <execute>transmission-gtk</execute>
-            </action> </item>
-        </menu>
-        <menu id="3" label="Office">
-            <item label="Calendar"> <action name="Execute">
-                <execute>gnome-calendar</execute>
-            </action> </item>
-            <item label="Document Viewer"> <action name="Execute">
-                <execute>evince</execute>
-            </action> </item>
-            <item label="LibreOffice Impress"> <action name="Execute">
-                <execute>libreoffice</execute>
-            </action> </item>
-            <item label="Xbiff"> <action name="Execute">
-                <execute>xbiff</execute>
-            </action> </item>
-        </menu>
-        <menu id="39" label="Other">
-            <item label="Telnet"> <action name="Execute">
-                <execute>alacritty -e telnet.netkit</execute>
-            </action> </item>
-        </menu>
-        <menu id="19" label="Shells">
-            <item label="Alacritty"> <action name="Execute">
-                <execute>alacritty</execute>
-            </action> </item>
-            <item label="Bash"> <action name="Execute">
-                <execute>alacritty -e bash --login</execute>
-            </action> </item>
-            <item label="Deepin Terminal"> <action name="Execute">
-                <execute>deepin-terminal</execute>
-            </action> </item>
-            <item label="GIT"> <action name="Execute">
-                <execute>alacritty -e git</execute>
-            </action> </item>
-            <item label="Sh"> <action name="Execute">
-                <execute>alacritty -e sh --login</execute>
-            </action> </item>
-            <item label="Tilix"> <action name="Execute">
-                <execute>tilix</execute>
-            </action> </item>
-            <item label="UXTerm"> <action name="Execute">
-                <execute>uxterm</execute>
-            </action> </item>
-            <item label="Xterm"> <action name="Execute">
-                <execute>xterm</execute>
-            </action> </item>
-        </menu>
-        <menu id="37" label="System">
-            <menu id="36" label="Settings">
-                <menu id="21" label="GNOME">
-                    <item label="Advanced Network Configuration"> <action name="Execute">
-                        <execute>nm-connection-editor</execute>
-                    </action> </item>
-                    <item label="Disks"> <action name="Execute">
-                        <execute>gnome-disks</execute>
-                    </action> </item>
-                    <item label="Language Support"> <action name="Execute">
-                        <execute>gnome-language-selector</execute>
-                    </action> </item>
-                    <item label="Login Window"> <action name="Execute">
-                        <execute>pkexec lightdm-settings</execute>
-                    </action> </item>
-                    <item label="Menu Editor"> <action name="Execute">
-                        <execute>menulibre</execute>
-                    </action> </item>
-                    <item label="Printers"> <action name="Execute">
-                        <execute>system-config-printer</execute>
-                    </action> </item>
-                    <item label="Settings"> <action name="Execute">
-                        <execute>gnome-control-center</execute>
-                    </action> </item>
-                    <item label="Software &amp; Updates"> <action name="Execute">
-                        <execute>software-properties-gtk</execute>
-                    </action> </item>
-                    <item label="Startup Applications"> <action name="Execute">
-                        <execute>gnome-session-properties</execute>
-                    </action> </item>
-                </menu>
-                <menu id="35" label="Xfce">
-                    <item label="Additional Drivers"> <action name="Execute">
-                        <execute>software-properties-gtk --open-tab=4</execute>
-                    </action> </item>
-                </menu>
-                <item label="Customize Look and Feel"> <action name="Execute">
-                    <execute>lxappearance</execute>
-                </action> </item>
-                <item label="IBus Preferences"> <action name="Execute">
-                    <execute>ibus-setup</execute>
-                </action> </item>
-                <item label="Input Method"> <action name="Execute">
-                    <execute>im-config</execute>
-                </action> </item>
-                <item label="Livepatch"> <action name="Execute">
-                    <execute>software-properties-gtk --open-tab=6</execute>
-                </action> </item>
-                <item label="nitrogen"> <action name="Execute">
-                    <execute>nitrogen</execute>
-                </action> </item>
-                <item label="Onboard Settings"> <action name="Execute">
-                    <execute>onboard-settings</execute>
-                </action> </item>
-                <item label="Openbox Configuration Manager"> <action name="Execute">
-                    <execute>obconf</execute>
-                </action> </item>
-                <item label="Previews Control"> <action name="Execute">
-                    <execute>/usr/lib/budgie-previews/previews_controls</execute>
-                </action> </item>
-                <item label="Qt5 Settings"> <action name="Execute">
-                    <execute>qt5ct</execute>
-                </action> </item>
-                <item label="Software Updater"> <action name="Execute">
-                    <execute>update-manager</execute>
-                </action> </item>
-                <item label="Tint2 Settings"> <action name="Execute">
-                    <execute>tint2conf</execute>
-                </action> </item>
-                <item label="Xfontsel"> <action name="Execute">
-                    <execute>xfontsel</execute>
-                </action> </item>
-                <item label="Xvidtune"> <action name="Execute">
-                    <execute>xvidtune</execute>
-                </action> </item>
-            </menu>
-            <item label="Budgie Desktop Settings"> <action name="Execute">
-                <execute>budgie-desktop-settings</execute>
-            </action> </item>
-            <item label="Color Profile Viewer"> <action name="Execute">
-                <execute>gcm-viewer</execute>
-            </action> </item>
-            <item label="Disk Usage Analyzer"> <action name="Execute">
-                <execute>baobab</execute>
-            </action> </item>
-            <item label="Editres"> <action name="Execute">
-                <execute>editres</execute>
-            </action> </item>
-            <item label="GNOME System Monitor"> <action name="Execute">
-                <execute>gnome-system-monitor</execute>
-            </action> </item>
-            <item label="Htop"> <action name="Execute">
-                <execute>alacritty -e htop</execute>
-            </action> </item>
-            <item label="Logout (obsession)"> <action name="Execute">
-                <execute>obsession-logout</execute>
-            </action> </item>
-            <item label="Logs"> <action name="Execute">
-                <execute>gnome-logs</execute>
-            </action> </item>
-            <item label="Power Statistics"> <action name="Execute">
-                <execute>gnome-power-statistics</execute>
-            </action> </item>
-            <item label="Pstree"> <action name="Execute">
-                <execute>alacritty -e pstree.x11</execute>
-            </action> </item>
-            <item label="Software"> <action name="Execute">
-                <execute>gnome-software</execute>
-            </action> </item>
-            <item label="Tint2"> <action name="Execute">
-                <execute>tint2</execute>
-            </action> </item>
-            <item label="Top"> <action name="Execute">
-                <execute>alacritty -e top</execute>
-            </action> </item>
-            <item label="Xclipboard"> <action name="Execute">
-                <execute>xclipboard</execute>
-            </action> </item>
-            <item label="Xev"> <action name="Execute">
-                <execute>x-terminal-emulator -e xev</execute>
-            </action> </item>
-            <item label="Xkill"> <action name="Execute">
-                <execute>xkill</execute>
-            </action> </item>
-            <item label="Xload"> <action name="Execute">
-                <execute>xload</execute>
-            </action> </item>
-            <item label="Xrefresh"> <action name="Execute">
-                <execute>xrefresh</execute>
-            </action> </item>
-        </menu>
-        <menu id="38" label="Utilities">
-            <item label="Archive Manager"> <action name="Execute">
-                <execute>file-roller</execute>
-            </action> </item>
-            <item label="Backups"> <action name="Execute">
-                <execute>deja-dup</execute>
-            </action> </item>
-            <item label="Bc"> <action name="Execute">
-                <execute>alacritty -e bc</execute>
-            </action> </item>
-            <item label="Budgie ARM and Pi Configuration"> <action name="Execute">
-                <execute>python3 /usr/lib/budgie-desktop/arm/main.py</execute>
-            </action> </item>
-            <item label="Calculator"> <action name="Execute">
-                <execute>gnome-calculator</execute>
-            </action> </item>
-            <item label="Catfish File Search"> <action name="Execute">
-                <execute>catfish</execute>
-            </action> </item>
-            <item label="Characters"> <action name="Execute">
-                <execute>gnome-characters</execute>
-            </action> </item>
-            <item label="compton"> <action name="Execute">
-                <execute>compton</execute>
-            </action> </item>
-            <item label="Dc"> <action name="Execute">
-                <execute>alacritty -e dc</execute>
-            </action> </item>
-            <item label="Files"> <action name="Execute">
-                <execute>nemo</execute>
-            </action> </item>
-            <item label="Firmware"> <action name="Execute">
-                <execute>gnome-firmware</execute>
-            </action> </item>
-            <item label="Fonts"> <action name="Execute">
-                <execute>gnome-font-viewer</execute>
-            </action> </item>
-            <item label="Help"> <action name="Execute">
-                <execute>yelp</execute>
-            </action> </item>
-            <item label="Magnus"> <action name="Execute">
-                <execute>magnus</execute>
-            </action> </item>
-            <item label="Maps"> <action name="Execute">
-                <execute>gapplication launch org.gnome.Maps</execute>
-            </action> </item>
-            <item label="Onboard"> <action name="Execute">
-                <execute>onboard</execute>
-            </action> </item>
-            <item label="picom"> <action name="Execute">
-                <execute>picom</execute>
-            </action> </item>
-            <item label="Screenshot"> <action name="Execute">
-                <execute>gnome-screenshot --interactive</execute>
-            </action> </item>
-            <item label="TeXInfo"> <action name="Execute">
-                <execute>alacritty -e info</execute>
-            </action> </item>
-            <item label="Window Shuffler Control"> <action name="Execute">
-                <execute>/usr/lib/budgie-window-shuffler/shuffler_control</execute>
-            </action> </item>
-            <item label="Xcalc"> <action name="Execute">
-                <execute>xcalc</execute>
-            </action> </item>
-            <item label="Xman"> <action name="Execute">
-                <execute>xman</execute>
-            </action> </item>
-        </menu>
-        <separator/>
-        <menu id="40" label="OpenBox">
-            <menu id="client-list-menu"/>
-            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
-            <separator/>
-            <item label="Exit"> <action name="Exit"/> </item>
-        </menu>
-    </menu>
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/  file:///usr/share/openbox/menu.xsd">
+  <menu id="root-menu" title="Menu" label="Openbox 3">
+<!--	<separator label="Main Menu"/>  -->
+		<item label="Terminal Emulator">
+			<action name="Execute">
+				<command>alacritty</command>
+			</action>
+		</item>
+		<item label="Web Browser">
+			<action name="Execute">
+				<command>midori</command>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<command>thunar</command>
+			</action>
+		</item>
+		<item label="Text Editor">
+			<action name="Execute">
+				<command>geany</command>
+			</action>
+		</item>
+		<separator/>
+		<menu execute="obmenu-generator" id="app-menu" label="Applications"/>
+		<menu id="root-menu-8397" label="Apps As Root">
+			<item label="Terminal (alacritty)">
+				<action name="Execute">
+					<execute>apps_as_root.sh alacritty</execute>
+				</action>
+			</item>
+			<item label="File Manager (thunar)">
+				<action name="Execute">
+					<execute>apps_as_root.sh 'dbus-run-session thunar'</execute>
+				</action>
+			</item>
+			<item label="Text Editor (geany)">
+				<action name="Execute">
+					<execute>apps_as_root.sh geany</execute>
+				</action>
+			</item>
+			<item label="Text Editor Alt (leafpad)">
+				<action name="Execute">
+					<execute>apps_as_root.sh leafpad</execute>
+				</action>
+			</item>
+			<item label="File Manager CLI (ranger)">
+				<action name="Execute">
+					<execute>apps_as_root.sh 'alacritty -e ranger'</execute>
+				</action>
+			</item>
+			<item label="Text Editor CLI (vim)">
+				<action name="Execute">
+					<execute>apps_as_root.sh 'alacritty -e vim'</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-srct" label="Shortcuts">
+			<item label="Color Chooser">
+				<action name="Execute">
+					<execute>color_picker</execute>
+				</action>
+			</item>
+			<item label="Stick Notes">
+				<action name="Execute">
+					<execute>tasks</execute>
+				</action>
+			</item>
+			<item label="Furminal">
+				<action name="Execute">
+					<execute>alacritty --config-file ~/.config/alacritty/fullscreen.yml</execute>
+				</action>
+			</item>
+			<item label="Music Player">
+				<action name="Execute">
+					<execute>alacritty -e ncmpcpp</execute>
+				</action>
+			</item>
+			<item label="Visualizer">
+				<action name="Execute">
+					<execute>alacritty --config-file ~/.config/alacritty/fullscreen.yml -e visualizer</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-8399" label="Quick Links">
+			<item label="DuckDuckGo">
+				<action name="Execute">
+					<execute>midori -a https://start.duckduckgo.com/</execute>
+				</action>
+			</item>
+			<item label="Google">
+				<action name="Execute">
+					<execute>midori -a https://www.google.com</execute>
+				</action>
+			</item>
+			<item label="Facebook">
+				<action name="Execute">
+					<execute>midori -a https://www.facebook.com</execute>
+				</action>
+			</item>
+			<item label="Twitter">
+				<action name="Execute">
+					<execute>midori -a https://www.twitter.com</execute>
+				</action>
+			</item>
+			<item label="GitHub">
+				<action name="Execute">
+					<execute>midori -a https://www.github.com</execute>
+				</action>
+			</item>
+			<item label="Reddit">
+				<action name="Execute">
+					<execute>midori -a https://www.reddit.com</execute>
+				</action>
+			</item>
+			<item label="Gmail">
+				<action name="Execute">
+					<execute>midori -a https://mail.google.com</execute>
+				</action>
+			</item>
+			<item label="Youtube">
+				<action name="Execute">
+					<execute>midori -a https://www.youtube.com</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Private">
+				<action name="Execute">
+					<execute>midori -p</execute>
+				</action>
+			</item>
+		</menu>
+		<menu execute="ob-shots" id="ShotsPipeMenu" label="Screenshot"/>
+		<separator/>
+		<menu execute="ob-places-pipemenu --recent ~/" id="pipe-placesmenu" label="Places"/>
+		<menu execute="ob-recent-files-pipemenu" id="pipe-164328" label="Recent Files"/>
+		<menu id="preferences" label="Preferences">
+			<menu id="obConfig" label="Openbox">
+				<item label="Settings">
+					<action name="Execute">
+						<command>obconf</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="Edit menu.xml">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/menu.xml</command>
+					</action>
+				</item>
+				<item label="Edit rc.xml">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/rc.xml</command>
+					</action>
+				</item>
+				<item label="Edit autostart">
+					<action name="Execute">
+						<command>exo-open ~/.config/openbox/autostart</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="Openbox Reconfigure">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="Openbox Restart">
+					<action name="Restart"/>
+				</item>
+			</menu>
+			<menu execute="ob-compositor" id="CompositingPipeMenu" label="Compositor"/>
+			<separator/>
+			<menu execute="change_style.sh" id="StylePipeMenu" label="Change Style"/>
+			<menu execute="change_font.sh" id="FontPipeMenu" label="Change Font"/>
+			<menu execute="change_launcher.sh" id="LauncherPipeMenu" label="Change Launcher"/>
+			<menu execute="change_powermenu.sh" id="PmenuPipeMenu" label="Change Powermenu"/>
+			<menu execute="change_scheme.sh" id="SchemePipeMenu" label="Terminal Color Scheme"/>
+			<separator/>
+			<menu execute="canvas_ob" id="CanvasPipeMenu" label="Generate Wallpaper"/>
+			<item label="Change Wallpaper">
+				<action name="Execute">
+					<command>nitrogen</command>
+				</action>
+			</item>
+			<item label="Appearance Settings">
+				<action name="Execute">
+					<command>xfce4-appearance-settings</command>
+				</action>
+			</item>
+			<separator/>
+			<item label="Power Settings">
+				<action name="Execute">
+					<command>xfce4-power-manager-settings</command>
+				</action>
+			</item>
+			<item label="Audio Settings">
+				<action name="Execute">
+					<command>pavucontrol</command>
+				</action>
+			</item>
+			<item label="Settings Manager">
+				<action name="Execute">
+					<command>xfce4-settings-manager</command>
+				</action>
+			</item>
+			<separator/>
+			<item label="About Developer">
+				<action name="Execute">
+					<execute>about.sh</execute>
+				</action>
+			</item>
+		</menu>
+		<menu execute="ob-kb-pipemenu" id="keybinds" label="Keybinds"/>
+		<separator/>
+		<item label="Lock Screen">
+			<action name="Execute">
+				<command>betterlockscreen --lock</command>
+			</action>
+		</item>
+		<menu id="obExit" label="System">
+				<item label="Logout">
+					<action name="Execute">
+						<command>ob_powermenu --logout</command>
+					</action>
+				</item>
+				<item label="Suspend">
+					<action name="Execute">
+						<command>ob_powermenu --suspent</command>
+					</action>
+				</item>
+				<item label="Reboot">
+					<action name="Execute">
+						<command>ob_powermenu --reboot</command>
+					</action>
+				</item>
+				<item label="Shutdown">
+					<action name="Execute">
+						<command>ob_powermenu --shutdown</command>
+					</action>
+				</item>
+		</menu>
+	</menu>
 </openbox_menu>
+<!-- vim:sw=2
+-->
